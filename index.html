@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Vincent Berwyn C.</title>
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -57,6 +60,7 @@
 </head>
 <body class="antialiased selection:bg-primary selection:text-black">
 
+    <!-- Navbar -->
     <nav class="fixed w-full z-40 bg-darker/80 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-wider text-white">VB<span class="text-primary">.</span></a>
@@ -69,11 +73,13 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="relative pt-32 pb-20 px-6 overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[100px] -z-10"></div>
         <div class="absolute top-1/4 right-1/4 w-[300px] h-[300px] bg-gray-500/10 rounded-full blur-[80px] -z-10"></div>
 
         <div class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12 relative z-10">
+            <!-- Teks -->
             <div class="flex-1 space-y-6 text-center md:text-left pt-10 md:pt-0">
                 <h2 class="text-primary font-semibold tracking-widest uppercase text-sm mb-2">Mahasiswa Sains Data</h2>
                 
@@ -136,6 +142,7 @@
                 </div>
             </div>
             
+            <!-- Profile Image -->
             <div class="flex-1 flex justify-center items-center relative animate-float">
                 <div class="relative w-64 h-64 md:w-[400px] md:h-[400px] flex justify-center items-center">
                     <div class="absolute inset-0 bg-primary/20 blob-profile blur-xl"></div>
@@ -323,6 +330,33 @@
                         <p class="text-sm text-gray-300 flex-1">Mengatur jadwal materi mingguan, mendelegasikan penanggung jawab, dan memastikan kegiatan pramuka rutin berjalan lancar.</p>
                         <div class="mt-4 pt-4 border-t border-gray-800 text-xs text-gray-400 flex items-center gap-2">
                             <i class="fas fa-campground"></i> SMAK Frateran Surabaya
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ============================ PENGMAS & KULIAH ============================ -->
+                
+                <!-- NEW CARD: PENGABDIAN MASYARAKAT (5 FOTO) -->
+                <div class="bg-card border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 flex flex-col group">
+                    <div class="relative w-full aspect-video overflow-hidden group">
+                        <div class="absolute top-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full border border-gray-700 z-20 pointer-events-none">
+                            <span class="text-xs font-bold text-primary">KULIAH</span>
+                        </div>
+                        <div class="flex overflow-x-auto snap-x snap-mandatory w-full h-full card-img-slider">
+                            <img src="asset/exp/pengmas1.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/exp/pengmas1.JPG';}; this.src='asset/exp/pengmas1.jpg';" alt="Pengmas 1" class="w-full h-full object-cover shrink-0 snap-center cursor-zoom-in hover:opacity-80 transition-opacity zoom-img">
+                            <img src="asset/exp/pengmas2.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/exp/pengmas2.JPG';}; this.src='asset/exp/pengmas2.jpg';" alt="Pengmas 2" class="w-full h-full object-cover shrink-0 snap-center cursor-zoom-in hover:opacity-80 transition-opacity zoom-img">
+                            <img src="asset/exp/pengmas3.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/exp/pengmas3.JPG';}; this.src='asset/exp/pengmas3.jpg';" alt="Pengmas 3" class="w-full h-full object-cover shrink-0 snap-center cursor-zoom-in hover:opacity-80 transition-opacity zoom-img">
+                            <img src="asset/exp/pengmas4.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/exp/pengmas4.JPG';}; this.src='asset/exp/pengmas4.jpg';" alt="Pengmas 4" class="w-full h-full object-cover shrink-0 snap-center cursor-zoom-in hover:opacity-80 transition-opacity zoom-img">
+                            <img src="asset/exp/pengmas5.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/exp/pengmas5.JPG';}; this.src='asset/exp/pengmas5.jpg';" alt="Pengmas 5" class="w-full h-full object-cover shrink-0 snap-center cursor-zoom-in hover:opacity-80 transition-opacity zoom-img">
+                        </div>
+                        <div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-2 py-1 rounded-full pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity">Geser &gt;</div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold text-white mb-1 leading-tight">Pengabdian Masyarakat</h3>
+                        <p class="text-sm text-primary mb-3">Sains Data untuk Masyarakat</p>
+                        <p class="text-sm text-gray-300 flex-1">Berkontribusi dalam pembuatan dan pengembangan website sekolah untuk SDN 3 Wonokromo Surabaya.</p>
+                        <div class="mt-4 pt-4 border-t border-gray-800 text-xs text-gray-400 flex items-center gap-2">
+                            <i class="fas fa-building"></i> SDN 3 Wonokromo Surabaya
                         </div>
                     </div>
                 </div>
@@ -554,7 +588,6 @@
                         </div>
                         <h4 class="text-center text-gray-300 font-medium text-sm">Event Planning</h4>
                     </div>
-
                 </div>
             </div>
 
@@ -582,12 +615,12 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex justify-between items-end mb-10 border-l-4 border-primary pl-4">
                 <h2 class="text-3xl font-bold text-white">Pencapaian & Sertifikasi</h2>
-                <span class="text-xs text-gray-500 italic">*Klik sertifikat untuk memperbesar atau mengunduh PDF</span>
+                <span class="text-xs text-gray-500 italic">*Klik untuk memperbesar / membuka dokumen PDF</span>
             </div>
             
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-                <div class="bg-card border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 hover:-translate-y-1 transition-all duration-300 group flex flex-col">
+                <div class="bg-card border border-gray-800 rounded-xl overflow-hidden hover:border-gray-600 hover:shadow-lg transition-all duration-300 group flex flex-col">
                     <div class="relative w-full aspect-[4/3] overflow-hidden bg-gray-800">
                         <img src="asset/certif/certif-baraya-2025.png" onerror="this.onerror=function(){this.onerror=null; this.src='asset/certif/certif-baraya-2025.JPG';}; this.src='asset/certif/certif-baraya-2025.jpg';" alt="Sertifikat BARAYA 2025" class="w-full h-full object-cover cursor-zoom-in group-hover:scale-105 transition-transform duration-500 zoom-img">
                         <div class="absolute top-2 left-2 bg-black/70 backdrop-blur-md px-2 py-0.5 rounded border border-gray-700 pointer-events-none">
@@ -651,7 +684,7 @@
                     <div class="p-4 flex flex-col flex-1">
                         <h3 class="text-base font-bold text-white mb-1 leading-tight">AI Essentials</h3>
                         <p class="text-xs text-primary mb-2">Google Bootcamp</p>
-                        <p class="text-[11px] text-gray-400 flex-1 leading-snug">Sertifikat pelatihan dasar Artificial Intelligence dari Google.</p>
+                        <p class="text-[11px] text-gray-400 flex-1 leading-snug">Pelatihan kecerdasan buatan dari Google.</p>
                     </div>
                 </a>
 
